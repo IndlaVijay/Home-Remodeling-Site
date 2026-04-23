@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appointment | Home Remodeling Services</title>
+  <meta name="description" content="Request a remodeling consultation for your home or business project." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Home Remodeling Services</a>
+      <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="book.html" class="btn btn-primary">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section alt-bg">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Book Appointment</p>
+          <h1>Request a consultation</h1>
+          <p>Tell us about your remodeling project and preferred schedule.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-form-card">
+          <form id="bookingForm" class="site-form" novalidate>
+            <label>
+              Full Name
+              <input type="text" name="name" id="name" />
+              <span class="error-text" id="nameError"></span>
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" id="email" />
+              <span class="error-text" id="emailError"></span>
+            </label>
+
+            <label>
+              Phone
+              <input type="tel" name="phone" id="phone" />
+              <span class="error-text" id="phoneError"></span>
+            </label>
+
+            <label>
+              Preferred Date
+              <input type="date" name="date" id="date" />
+              <span class="error-text" id="dateError"></span>
+            </label>
+
+            <label>
+              Preferred Time
+              <input type="time" name="time" id="time" />
+              <span class="error-text" id="timeError"></span>
+            </label>
+
+            <label>
+              Service
+              <select name="service" id="service">
+                <option value="">Select a service</option>
+                <option>Bathroom Remodeling</option>
+                <option>Exterior Remodeling</option>
+                <option>Kitchen Remodeling</option>
+                <option>Indoor Remodeling</option>
+                <option>Fence Remodeling</option>
+                <option>Basement Remodeling</option>
+              </select>
+              <span class="error-text" id="serviceError"></span>
+            </label>
+
+            <label>
+              Property Type
+              <select name="propertyType" id="propertyType">
+                <option value="">Select property type</option>
+                <option>Residential</option>
+                <option>Commercial</option>
+              </select>
+              <span class="error-text" id="propertyTypeError"></span>
+            </label>
+
+            <label>
+              Project Notes
+              <textarea name="notes" id="notes" rows="5"></textarea>
+            </label>
+
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+            <p class="form-message" id="bookingMessage"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
